@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Corsrex</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/png" href="/static/imgs/fav-main.ico">
+    <script src="https://kit.fontawesome.com/ad2959bfcc.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .alert {
+        display: none;
+        padding: 10px;
+        width: 200px;
+        color: black;
+        background: rgba(33, 109, 38, 0.8);
+        border-radius: 5px;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 40vw;
+        right: 10vw;
+    }
+</style>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="/static/imgs/logo2.png" loading="lazy" alt="logo">
+        <div class="navigation">
+            <ul id="ul-tag">
+                <i id="menu-close" class="fa-solid fa-x"></i>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a class="active" href="/contact">Contact</a></li>
+            </ul>
+
+            <img id="menu" src="/static/imgs/menu.png" alt="" srcset="">
+        </div>
+    </nav>
+
+    <!--About-Home -->
+
+    <section id="about-home">
+        <h2>Contact Us</h2>
+    </section>
+
+    <div class="alert" id="successMessage">
+        Sent Successfully!
+    </div>
+
+    <!-- Contact -->
+
+    <section id="contact">
+        <div class="getin">
+            <h2>Get in Touch</h2>
+            <p>Looking for help? Fill the form and start a new adventure</p>
+
+            <div class="getin-details">
+                <h3>Headquarters</h3>
+                <div>
+                    <i class="fa-solid fa-house get"></i>
+                    <p>C-234, New Collectorate, City Centre, Gwalior, MP 474020</p>
+                </div>
+
+                <h3>Phone</h3>
+                <div>
+                    <i class="fas fa-phone-alt get"></i>
+                    <p>
+                        (+91) 747 702 8192
+                        <br>
+                        (+91) 961 600 0016
+                    </p>
+                </div>
+
+                <h3>Support</h3>
+                <div>
+                    <i class="fa-solid fa-envelope get"></i>
+                    <p>
+                        anshumansp16@gmail.com
+                        <br>
+                        lonewolfzproductions@gmail.com
+                    </p>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="pro-links">
+                    <a href="https://www.facebook.com/anshuman.parmar.129"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/anshuman_.__/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anshuman-singh-757666219/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/anshumansp"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="form">
+            <form action="/contact" method="POST" id="form">
+                <h4>Let's Connect</h4>
+                <p>Send your message, enquiry, or any complaint to us </p>
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-col">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-col">
+                    <textarea id="" cols="30" rows="8" placeholder="Your Message" class="form-control" name="message"
+                        required></textarea>
+                </div>
+                <div class="form-col">
+                    <button type="submit" id="btn">Send Message</button>
+                </div>
+        </div>
+        </form>
+    </section>
+
+    <!-- Map -->
+
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733877.723577015!2d75.78008558824412!3d23.947531191727457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39667381d35aea05%3A0xe0106b0d4e701c1e!2sMadhya%20Pradesh!5e0!3m2!1sen!2sin!4v1689324425464!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Courses</h3>
+            <li><a href="/courses">Back-End</a></li>
+            <li><a href="/courses">Front-End</a></li>
+            <li><a href="/courses">FullStack</a></li>
+            <li><a href="/courses">Hacking</a></li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Others</h3>
+            <li><a href="/courses">Promo Codes</a></li>
+            <li><a href="/courses">Refer Us</a></li>
+            <li><a href="/courses">Affiliate Program</a></li>
+            <li><a href="/courses">Terms of Services</a></li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li><a href="/blog">Guides</a></li>
+            <li><a href="/blog">Blogs</a></li>
+            <li><a href="/blog">E-Books</a></li>
+            <li><a href="https://youtu.be/Ts2fRKJXy8A">Videos</a></li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Trust Us, We only send promo offers.</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address" id="">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©2023 All Rights Reserved | Corsrex Education Pvt. Ltd.</p>
+            <div class="pro-links">
+                <a href="https://www.facebook.com/anshuman.parmar.129"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/anshuman_.__/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/anshuman-singh-757666219/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="/static/script.js"></script>
+
+    <script>
+
+        var successMessage = document.getElementById("successMessage");
+        var form = document.getElementById("form");
+
+        function showSuccessMessage() {
+            successMessage.style.display = "block";
+            setTimeout(function () {
+                successMessage.style.display = "none";
+            }, 2000);
+        }
+
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            fetch('/contact', {
+                method: 'POST',
+                body: new FormData(form), // Use the 'form' variable here
+            })
+                .then(response => response.json()) // Parse the JSON response
+                .then(data => {
+                    console.log(data);
+                    showSuccessMessage();
+                })
+                .catch(error => {
+                    console.log(error)
+                });
+        }
+
+        form.addEventListener("submit", handleSubmit);
+
+    </script>
+</body>
+
+</html>
