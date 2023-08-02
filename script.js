@@ -1,23 +1,34 @@
-let timeClass = document.getElementById("time"),
-  timeClassParent = document.getElementById("reminder");
-setInterval(() => {
-  let e = new Date(),
-    t = e.getHours(),
-    s = e.getMinutes(),
-    n = e.getSeconds(),
-    l = 24 - t,
-    a = 60 - s,
-    i = 60 - n;
-  (l = l < 10 ? "0" + l : l),
-    (a = a < 10 ? "0" + a : a),
-    (i = i < 10 ? "0" + i : i),
-    (timeClass.innerHTML = `
-    <div class="date"> 01 <br> Days </div>
-    <div class="date"> ${l} <br> Hours </div>
-    <div class="date"> ${a} <br> Minutes </div>
-    <div class="date"> ${i} <br> Seconds </div>`),
-    timeClassParent.append(timeClass);
-}, 1e3);
+document.addEventListener("DOMContentLoaded", function () {
+  var timeClass = document.getElementById("time");
+  function formatTime(time) {
+    return time < 10 ? "0" + time : time;
+  }
+
+  // Function to update the time displayed on the page
+  function updateTime() {
+    let currentTime = new Date();
+    let remainingHours = 24 - currentTime.getHours();
+    let remainingMinutes = 60 - currentTime.getMinutes();
+    let remainingSeconds = 60 - currentTime.getSeconds();
+
+    remainingHours = formatTime(remainingHours);
+    remainingMinutes = formatTime(remainingMinutes);
+    remainingSeconds = formatTime(remainingSeconds);
+
+    timeClass.innerHTML = `
+        <div class="date"> 01 <br> Days </div>
+        <div class="date"> ${remainingHours} <br> Hours </div>
+        <div class="date"> ${remainingMinutes} <br> Minutes </div>
+        <div class="date"> ${remainingSeconds} <br> Seconds </div>
+      `;
+  }
+
+  // Initial call to update time
+  updateTime();
+
+  // Update time every second
+  setInterval(updateTime, 1000);
+});
 const menuOpenButton = document.getElementById("menu"),
   menuCloseButton = document.getElementById("menu-close"),
   ulTag = document.getElementById("ul-tag");
